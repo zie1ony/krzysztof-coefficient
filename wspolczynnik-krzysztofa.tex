@@ -1,0 +1,68 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[polish]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=4cm,right=4cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{definition}{Definicja}[section]
+
+\title{Współczynnik Krzysztofa}
+
+\author{
+  Krzysztof Pobiarżyn\\
+  \texttt{krzysztof@odra.dev}
+  \and
+  Maciej Zieliński\\
+  \texttt{maciej@odra.dev}
+  \and
+  Jakub Płaskonka\\
+  \texttt{kuba@odra.dev}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Praca ta po raz pierwszy podaje formalną definicję Współczynnika Krzysztofa. Jest on głównym i nieodłączynym już narzędziem podejmowania decyzji o akceptację, bądź odrzucenie nowego projektu.
+\end{abstract}
+
+\section{Motywacja}
+Odpowiednia decyzja o podjęciu, bądź odrzuceniu projektu jest kluczowym elementem rozwoj małych zespołów. Błędna decyzja może doprowadzić do utraty rentowności zespółu, a przede wszystkim do spadku morale i utraty radości z budowania nowych projektów. Na pomoc przy podejmowaniu decyzji przychodzi miara jaką jest $ Współczynnik$ $Krzysztofa$ i zasada akceptowania $Kryterium$ $Krzysztofa$, które opisaliśmy w punkcie nr 2. Przykładowe zastosowanie przedstawiamy w punkcie nr 3. 
+
+\section{Definicja}
+
+$Współczynnik$ $Krzysztofa$ $K$ jest miarą opłacalności projektu. Zależy on od:
+
+\begin{itemize}
+\item przychodu z projektu $P$,
+\item rzeczywistego kosztu projetu $R$.
+\end{itemize}
+
+\begin{definition}[Współczynnik Krzysztofa]
+\[K = \frac{P}{\pi R}\]
+\end{definition}
+
+\begin{definition}[Kryterium Krzysztofa]
+\[K \ge 1\]
+\end{definition}
+
+Projekt akceptowalny to taki, który spełnia $Kryterium$ $Krzysztofa$.
+
+\section{Przykłady}
+Dla przykładu przeprowadzimy analizę opłacalności projektu $A$. Cena projektu to 760 000 EUR, a jego koszt wykonania to 200 000 EUR.
+
+\[K = \frac{760000}{\pi * 200000} = 1.2095775675 \ge 1\]
+
+Tak więc projekt spełnia $Kryterium$ $Krzysztofa$, czyli nadaje się do wzięcia.
+\end{document}
